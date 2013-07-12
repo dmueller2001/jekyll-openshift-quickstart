@@ -10,21 +10,13 @@ Work in progress, please report issues.
 
 Create OpenShift application
 
-    rhc app create -a $name -t php-5.3
+    rhc app create $name ruby-1.9 --from-source=git://github.com/openshift-quickstart/awestruct-openshift-quickstart.git
 
-and enter the directory
+enter the directory
 
     cd $name
 
-Add this repository as new remote
-
-    git remote add template -m master git://github.com/openshift-quickstart/awestruct-openshift-quickstart.git
-
-and pull locally
-
-    git pull -s recursive -X theirs template master
-
-now build your application using Awestruct.
+and build your application using Awestruct.
 
 To deploy to OpenShift just push
 

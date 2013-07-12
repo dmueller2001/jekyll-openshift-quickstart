@@ -35,7 +35,8 @@ echo "* Generating site"
 
 awestruct -P production -g
 
-mkdir -p ${OPENSHIFT_REPO_DIR}php
-mv _site/* ${OPENSHIFT_REPO_DIR}php
+rm -rf ${OPENSHIFT_REPO_DIR}public
+mkdir -p ${OPENSHIFT_REPO_DIR}public
+mv _site/* ${OPENSHIFT_REPO_DIR}public
 
 echo "* Done"
