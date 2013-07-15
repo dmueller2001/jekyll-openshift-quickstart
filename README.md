@@ -6,6 +6,12 @@ Template for running awestruct on OpenShift.
 
 Work in progress, please report issues.
 
+Updated!!
+
+## How to
+
+Your awestruct source should be placed in the lib/ directory. Once you push your code, this quickstart builds the site for you.
+
 ## Installation
 
 Create OpenShift application
@@ -28,10 +34,11 @@ Now, your application is available at
 
 ## What it does?
 
-* Install awestruct if not available
-* Update awestruct when already available
+* Install awestruct/dependencies if needed
+* Update awestruct/dependencies if possible
 * Generate the site to static files
 
 ## Tools
 
 * Awestruct
+* Phusion Passenger & Apache for serving the files

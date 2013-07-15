@@ -4,7 +4,7 @@
 # before the deploy step.  This script gets executed directly, so it
 # could be python, php, ruby, etc.
 
-cd ${OPENSHIFT_REPO_DIR}libs
+cd ${OPENSHIFT_REPO_DIR}lib
 
 mkdir -p ${OPENSHIFT_DATA_DIR}gems
 
@@ -18,14 +18,14 @@ then
   
   echo "  * Check for new Awestruct version"
 
-  gem update awestruct --no-ri --no-rdoc
+  gem update --no-ri --no-rdoc
   gem cleanup
 
 else
   
   echo "  * Installing awestruct"
 
-  gem install awestruct --no-ri --no-rdoc
+  gem install awestruct htmlcompressor coffee-script --no-ri --no-rdoc
 
 fi
 
