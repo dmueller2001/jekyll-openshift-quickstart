@@ -1,2 +1,4 @@
-libs/_site
-libs/.sass-cache
+/lib/.awestruct/
+/lib/.sass-cache/
+/lib/_site
+/lib/_tmp/
