@@ -1,6 +1,6 @@
 # Jekyll for OpenShift
 
-Template for running awestruct on OpenShift.
+Template for running jekyll on OpenShift.
 
 ## Status
 
