@@ -1,4 +1,4 @@
-# Awestruct for OpenShift
+# Jekyll for OpenShift
 
 Template for running awestruct on OpenShift.
 
@@ -10,13 +10,13 @@ Updated!!
 
 ## How to
 
-Your awestruct source should be placed in the lib/ directory. Once you push your code, this quickstart builds the site for you.
+Your jekyll source should be placed in the lib/ directory. Once you push your code, this quickstart builds the site for you.
 
 ## Installation
 
 Create OpenShift application
 
-    rhc app create $name ruby-1.9 --from-source=git://github.com/openshift-quickstart/awestruct-openshift-quickstart.git
+    rhc app create $name ruby-1.9 --from-source=git://github.com/dmueller2001/jekyll-openshift-quickstart.git
 
 enter the directory
 
@@ -34,11 +34,11 @@ Now, your application is available at
 
 ## What it does?
 
-* Install awestruct/dependencies if needed
-* Update awestruct/dependencies if possible
+* Install jekyll/dependencies if needed
+* Update jekyll/dependencies if possible
 * Generate the site to static files
 
 ## Tools
 
-* Awestruct
+* Jekyll
 * Phusion Passenger & Apache for serving the files
