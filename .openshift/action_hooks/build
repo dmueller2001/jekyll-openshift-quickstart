@@ -13,10 +13,10 @@ export GEM_PATH=${OPENSHIFT_DATA_DIR}gems
 
 echo "* Setting up environment"
 
-if gem list | grep awestruct
+if gem list | grep jekyll
 then
 
-  echo "  * Awestruct previously installed"
+  echo "  * Jekyll previously installed"
 
   #echo "  * Check for new Awestruct version"
 
@@ -24,9 +24,9 @@ then
 
 else
 
-  echo "  * Installing awestruct"
+  echo "  * Installing jekyll"
 
-  gem install awestruct --no-ri --no-rdoc
+  gem install jekyll --no-ri --no-rdoc
 
 fi
 
@@ -34,7 +34,7 @@ export PATH=$GEM_PATH/bin:$PATH
 
 echo "* Generating site"
 
-awestruct -P production -g --force
+jekyll build  
 
 rm -rf ${OPENSHIFT_REPO_DIR}public
 mkdir -p ${OPENSHIFT_REPO_DIR}public
